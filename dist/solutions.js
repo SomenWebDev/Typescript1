@@ -3,5 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function filterEvenNumbers(numbers) {
     return numbers.filter((num) => num % 2 === 0);
 }
-console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+console.log(reverseString("typescript"));
 //# sourceMappingURL=solutions.js.map
