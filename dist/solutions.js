@@ -6,5 +6,14 @@ function filterEvenNumbers(numbers) {
 function reverseString(str) {
     return str.split("").reverse().join("");
 }
-console.log(reverseString("typescript"));
+function checkType(value) {
+    if (typeof value === "string") {
+        return "String";
+    }
+    else {
+        return "Number";
+    }
+}
+console.log(checkType("Hello")); // Output: "String"
+console.log(checkType(42)); // Output: "Number"
 //# sourceMappingURL=solutions.js.map
