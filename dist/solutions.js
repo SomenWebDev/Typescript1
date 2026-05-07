@@ -14,6 +14,12 @@ function checkType(value) {
         return "Number";
     }
 }
-console.log(checkType("Hello")); // Output: "String"
-console.log(checkType(42)); // Output: "Number"
+function getProperty(obj, key) {
+    return obj[key];
+}
+// Usage
+const user = { id: 1, name: "John Doe", age: 21 };
+console.log(getProperty(user, "name")); // "John Doe"
+console.log(getProperty(user, "id")); // 1
+console.log(getProperty(user, "age"));
 //# sourceMappingURL=solutions.js.map

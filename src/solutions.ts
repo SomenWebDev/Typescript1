@@ -14,3 +14,7 @@ function checkType(value: StringOrNumber): string {
     return "Number";
   }
 }
+
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
