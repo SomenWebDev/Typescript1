@@ -17,9 +17,29 @@ function checkType(value) {
 function getProperty(obj, key) {
     return obj[key];
 }
-// Usage
-const user = { id: 1, name: "John Doe", age: 21 };
-console.log(getProperty(user, "name")); // "John Doe"
-console.log(getProperty(user, "id")); // 1
-console.log(getProperty(user, "age"));
+function toggleReadStatus(book) {
+    return { ...book, isRead: true };
+}
+class Person {
+    name;
+    age;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+class Student extends Person {
+    grade;
+    constructor(name, age, grade) {
+        super(name, age);
+        this.grade = grade;
+    }
+    getDetails() {
+        return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
+    }
+}
+function getIntersection(arr1, arr2) {
+    return arr1.filter((num) => arr2.includes(num));
+}
+console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
 //# sourceMappingURL=solutions.js.map
